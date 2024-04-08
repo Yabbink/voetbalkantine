@@ -13,12 +13,12 @@ if(isset($_POST['login'])) {
 //        echo $row['firstName'] . " " . $row['lastName'];
         print_r($row);
         $_SESSION['user'] = $row;
-        header("location: index.html");
+        header("location: index.php");
     }
     else
     {
         echo "je wachtwoord is fout geef een ander wachtwoord";
-        header("location: index.html");
+        header("location: index.php");
     }
 }
 
