@@ -1,4 +1,5 @@
 <?php
+require_once '../src/databaseFunctions.php';
 session_start();
 $db = db_connect();
 if ($db->connect_error){
